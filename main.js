@@ -15,8 +15,8 @@ const moment = require("moment-timezone");
 
 blocked = [];
 
-require("./murphy.js");
-nocache("./murphy.js", (module) => console.log(`${module} is now updated!`));
+require("./index.js");
+nocache("./index.js", (module) => console.log(`${module} is now updated!`));
 
 const starts = async (murphy = new WAConnection()) => {
   murphy.logger.level = "warn";
